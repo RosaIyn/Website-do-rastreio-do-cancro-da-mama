@@ -1,0 +1,434 @@
+/*SCROLL*/
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/*FONT*/
+
+body {
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+}
+
+
+/*TOP-SITE*/
+
+.top-site {
+    background-color: #e9e9ea;
+    padding: 20px 50px;
+    height: 80px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    display: block;
+}
+
+.header-links {
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+}
+
+.header-links a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+/*RASTREIO CANCRO DA MAMA*/
+
+
+.hero {
+    height: 600px;
+    background-image: url(../images/636118ed1f30526a0b336287_cancer-de-mama-tipos.jpg);
+    background-size: cover;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(235, 129, 182, 0.4); 
+    z-index: 1;
+} 
+
+.hero-content {
+    position: relative; 
+    z-index: 2; 
+    width: 100%;
+    max-width: 800px; 
+}
+
+.hero h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 40px; 
+}
+
+.hero a{
+    display: inline-block;
+    background-color: #f78d38;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 8px;
+    color: white;
+}
+
+
+/*PORQUE FAZER O RASTREIO*/
+
+.porque-fazer{
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.porque-fazer article{
+    background-color: #ffe0eb;
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    padding: 40px 30px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.porque-fazer h2{
+    color: #f78d38;
+    width: 100%; 
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.porque-fazer img{
+    height: 125px;
+    width: auto;
+}
+
+.porque-fazer p{
+    color: #f78d38;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/*COMO FUNCIONA*/
+
+.como-funciona{
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.como-funciona article{
+    background-color: #ffe0eb;
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    padding: 40px 30px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.como-funciona h2{
+    color: #f78d38;
+    width: 100%; 
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.como-funciona img {
+    height: 125px;
+    width: auto;
+}
+
+.como-funciona p{
+    color: #f78d38;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+
+/*TESTEMUNHOS*/
+
+
+.testemunhos {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.testemunhos h2 {
+    width: 100%; 
+    font-weight: bold;
+    color: #f78d38; 
+    margin-bottom: 50px;
+}
+
+.testemunhos article {
+    width: 450px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    min-height: 250px;
+}
+
+.testemunhos img {
+    width: 150px; 
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.fundo1{
+    background-color: #ffe0eb;
+}
+
+.fundo2{
+    background-color: #ffe0eb;
+}
+
+.testemunhos article p {
+    background-color:  #ffe0eb;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-right: 40px;
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#f78d38;
+    text-align: left;
+    font-weight: bold;
+}
+
+.testemunhos article p:last-of-type {
+    font-weight: normal;
+}
+
+
+
+/*FORMULÁRIO*/
+
+
+#formulario {
+    background-color: #ffe0eb;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px ;
+    text-align: center;
+}
+
+.signup-form {
+    background-color: #ffc0d5;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px; 
+}
+
+#formulario h2 {
+    color: #f78d38;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.signup-form {
+    background-color: #ffc0d5; 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+    display: block; 
+}
+
+
+.idade-telemovel {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.idade-telemovel .field {
+    flex-grow: 1;
+    width: 50%; 
+    margin-bottom: 0;
+}
+
+
+.field {
+    margin-bottom: 15px; 
+}
+
+
+
+.signup-form input[type="text"],
+.signup-form input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+    display: block;
+}
+
+.form-actions {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.submit-btn {
+    background-color: #f78d38;
+    color: white;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/*FOOTER*/
+
+.main-footer{
+    background-color: #e9e9ea;
+    padding-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-phone{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-schedule {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    margin-top: 5px;
+    text-align: center; 
+}
+
+    .copyright {
+    font-size: small;
+    margin-top: 15px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+/*VERSÃO MOBILE*/
+
+@media all and (max-width:768px){
+
+.top-site{
+    padding: 20px 20px;
+}
+
+.logo img{
+    height: 25px;
+    width: auto;
+}
+
+.header-links{
+    text-align: right;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.hero-content h1{
+    font-size: 40px;
+}
+
+.h2{
+    font-size: 18px;
+}
+
+}
+
+
+@media all and (max-width:480px){
+
+.logo img{
+    height: 22px;
+    width: auto;
+}
+
+.header-links{
+    text-align: right;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.hero-content h1{
+    font-size: 30px;
+}
+
+.h2{
+    font-size: 18px;
+}
+
+}
